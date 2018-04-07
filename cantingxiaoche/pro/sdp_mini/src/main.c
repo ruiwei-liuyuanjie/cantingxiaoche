@@ -356,7 +356,7 @@ extern void testBeep(int i);
 
 
     if (!init_dev()) {                                  //所有外设初始化
-        goto _on_fail;
+        goto   _on_fail;
     }
 
     play_poweron();                                     //开机发声
