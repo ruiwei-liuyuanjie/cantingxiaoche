@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=OUTPUT_A1 Pin=JP9-1
+Removed Pin From Net: NetName=OUTPUT_A2 Pin=JP9-2
+Added Pin To Net: NetName=OUTPUT_A2 Pin=JP9-1
+Added Pin To Net: NetName=OUTPUT_A1 Pin=JP9-2

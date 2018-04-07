@@ -1,0 +1,54 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~slam.PrjPCB|ReportField=ProjectFullPath~I:\快盘\自己练习的项目\SLAM\PCB\slam.PrjPCB|ReportField=Title~Bill of Materials For Project [slam.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~134|ReportField=ReportTime~12:03:46|ReportField=ReportDate~2017/5/4|ReportField=ReportDateTime~2017/5/4 12:03:46|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~2017/5/4|ReportField=CurrentTime~12:03:43|ReportField=Date~|ReportField=DocumentFullPathAndName~I:\快盘\自己练习的项目\SLAM\PCB\框图.SchDoc|ReportField=DocumentName~框图.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~2017/4/25|ReportField=Organization~|ReportField=ProjectName~slam.PrjPCB|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~slam.PrjPCB|ReportField=DataSourceFullPath~I:\快盘\自己练习的项目\SLAM\PCB\slam.PrjPCB
+DC5V|蜂鸣器|B1|BEEP 6.5x12x8.5|BEEP|1
+104|无极性贴片电容|C1, C2, C3, C4, C5, C9, C10, C11, C12, C14, C28, C29, C31|C 0603|C|13
+22PF|无极性贴片电容|C6, C7|C 0603|C|2
+106|无极性贴片电容|C8, C13|C 0603|C|2
+15nF|无极性贴片电容|C15, C16, C18, C20, C21, C27|C 0603|C|6
+0.22uF|无极性贴片电容|C17, C19, C26|C 0603|C|3
+105|无极性贴片电容|C30|C 0603|C|1
+10uF|贴片钽电容|E1|CD S(2012)|C-CD|1
+220uf|贴片电解电容|E2, E3, E4|CM E(8*10.2)|C-CM|3
+2A|贴片保险丝|F1|FU 1206|FU|1
+1A|贴片保险丝|F2|FU 0805|FU|1
+TL431|可调基准稳压芯?|IC1|SOT23-3N|TL431_SMD|1
+'DG128-5.0-2P-14|插装条形连接器|J1|kf128-3.81-2p|CON2|1
+SLA_MINI_PCIE|SLA_MINI_PCIE|J2|MINI_PCIE|SLA_PCIE|1
+HDR-1X3|3P接插件|JP1, JP14|XH2.54-3P|Header 3|2
+Header2X2|2*2P接插件|JP2|HDR-2X2|Header 2X2|1
+HDR-1X2|2P接插件|JP3, JP17|HDR-1X2|Header 2|2
+HDR-1X4|4P接插件|JP4|HDR-1X4|Header 4|1
+HDR-1X4|4P接插件|JP5|XH2.54-4P|Header 4|1
+HDR-1X10|10P接插件|JP6|HDR-1X10|Header 10|1
+HDR-1X14|14P接插件|JP7|HDR-1X14|Header 14|1
+HDR-1X16|16P接插件|JP8|HDR-1X16|Header 16|1
+HDR-1X2|2P接插件|JP9, JP10, JP11|KF128-3.81-2P|Header 2|3
+HDR-1X4|4P接插件|JP12, JP13|XH2.54-4P_H|Header 4|2
+HDR-1X7|7P接插件|JP15|XH2.54-7P|Header 7|1
+HDR-1X5|5P接插件|JP16|XH2.54-5P_H|Header 5|1
+15uH|功率屏蔽电感|L1|CDRH73|L-CDRH|1
+10um|小功率贴片电感|L2, L3|L 0805|L|2
+红色|贴片LED|LED1, LED2, LED3|LED 0603R|LED-SMD|3
+SS8050|高频放大-NPN型|Q1, Q3|SOT23-3N|8050-SMD|2
+SS8550|高频放大-PNP型|Q2|SOT23-3N|8550-SMD|1
+10K|贴片电阻|R1, R3, R9, R13, R14, R15, R16, R19, R20, R23, R25, R29, R32, R33, R34, R46|R 0603|R|16
+3.24K|贴片电阻|R2|R 0603|R|1
+1K|贴片电阻|R4, R5, R6, R8, R10, R11, R12, R35, R36, R37, R38, R39, R40, R41, R42, R43, R45, R47, R48|R 0603|R|19
+1M|贴片电阻|R7|R 0603|R|1
+0R5|直插色环电阻|R17, R18, R28|RS 3W-V7|R-CRR|3
+1k|贴片网络排阻|R21, R27|RCA-8P4R-0603|R-8P4R|2
+100|贴片网络排阻|R22|RCA-8P4R-0603|R-8P4R|1
+4.7K|贴片电阻|R24, R26, R30, R31|R 0603|R|4
+0|贴片电阻|R44|R 0603|R|1
+HR911105A|带灯以太网接口|RJ？1|RJ-45A12|HR911105A|1
+6x6x5|直插6x6轻触开关|SW1|TSW DIP-6*6*6|TSW DIP-6x6|1
+TEST TP|测试环|TP2, TP3, TP5, TP6, TP9, TP10, TP12, TP13, TP15|TEST TP1.4_BK|TEST TP|9
+TPS5430DDA|贴片集成电路|U1|SOP8_N|TPS5430/1|1
+USR-WIFI232-A/B/D|串口转WIFI模块|U2|USR-WIFI232-A/B/D|USR-WIFI232-A/B/D|1
+STM32F103V|32位STM单片机10|U3|LQFP100 14X14_N|STM32F103V|1
+WS2812|集成LED灯|U4|WS2812|WS2812|1
+L6201PS|电机驱动H桥|U5, U6, U8|SO_PowerSO20|L6201PS|3
+TLP281-4||U7|SOP16_n|TLP281-4|1
+LM324|贴片集成电路|U9|SOP14_n|LM324|1
+AMS1117-3V3|三端稳压芯片|V1|SOT223_M|AMS1117|1
+SS34|肖特基二极管|VD1|SMA|SS14|1
+8M|4脚晶振|X1|XTAL-3225|XTAL-4|1

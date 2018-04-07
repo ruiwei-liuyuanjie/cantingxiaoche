@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=VIN Pin=R27-1
+Removed Pin From Net: NetName=VIN Pin=R27-2
+Removed Pin From Net: NetName=VIN Pin=R27-3
+Removed Pin From Net: NetName=VIN Pin=R27-4
+Removed Pin From Net: NetName=VIN Pin=U7-1
+Removed Pin From Net: NetName=VIN Pin=U7-3
+Removed Pin From Net: NetName=VIN Pin=U7-5
+Removed Pin From Net: NetName=VIN Pin=U7-7
+Added Component: Designator=JP17(HDR-1X2)
+Added Pin To Net: NetName=VIN Pin=JP17-2
+Added Pin To Net: NetName=NetJP17_1 Pin=JP17-1
+Added Pin To Net: NetName=NetJP17_1 Pin=R27-1
+Added Pin To Net: NetName=NetJP17_1 Pin=R27-2
+Added Pin To Net: NetName=NetJP17_1 Pin=R27-3
+Added Pin To Net: NetName=NetJP17_1 Pin=R27-4
+Added Pin To Net: NetName=NetJP17_1 Pin=U7-1
+Added Pin To Net: NetName=NetJP17_1 Pin=U7-3
+Added Pin To Net: NetName=NetJP17_1 Pin=U7-5
+Added Pin To Net: NetName=NetJP17_1 Pin=U7-7
+Added Net: Name=NetJP17_1
+Added Member To Class: ClassName=MOTO Member=Component JP17 HDR-1X2
