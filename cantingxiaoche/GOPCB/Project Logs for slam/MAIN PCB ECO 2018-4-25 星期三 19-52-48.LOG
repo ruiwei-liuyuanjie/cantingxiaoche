@@ -1,0 +1,3 @@
+Removed Member From Class: ClassName=main Member=R1
+Change Component Designator: OldDesignator=R1 NewDesignator=R70
+Added Member To Class: ClassName=main Member=Component R70 1K

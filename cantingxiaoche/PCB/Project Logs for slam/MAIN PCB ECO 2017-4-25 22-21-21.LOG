@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=OUTPUT_B1 Pin=JP10-1
-Removed Pin From Net: NetName=OUTPUT_B2 Pin=JP10-2
-Added Pin To Net: NetName=OUTPUT_B2 Pin=JP10-1
-Added Pin To Net: NetName=OUTPUT_B1 Pin=JP10-2
-Added Room: Name=main
-Added Room: Name=MOTO
-Added Room: Name=POW
-Added Room: Name=SLAPCIE

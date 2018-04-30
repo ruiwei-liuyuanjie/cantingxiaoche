@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=VIN Pin=JP12-4
-Removed Pin From Net: NetName=VIN Pin=JP13-4
-Added Pin To Net: NetName=NetJP17_1 Pin=JP12-4
-Added Pin To Net: NetName=NetJP17_1 Pin=JP13-4
-Change Net Name : Old Net Name=NetJP17_1 New Net Name=NetJP12_4

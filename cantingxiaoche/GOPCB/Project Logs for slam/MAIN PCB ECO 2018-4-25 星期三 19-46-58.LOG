@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=+3V3 Pin=U12-16
+Change Component DesignItemId : Designator=U1 Old DesignItemId= New DesignItemId=TPS54540
+Change Component DesignItemId : Designator=U6 Old DesignItemId= New DesignItemId=ULN2803
+Change Component DesignItemId : Designator=U10 Old DesignItemId= New DesignItemId=ULN2803
+Change Component Description : Designator=U8 Old Description= New Description=电机驱动H桥
+Change Component Description : Designator=U5 Old Description= New Description=集成LED灯
+Change Component Description : Designator=J1 Old Description=SL New Description=SLA_MINI_PCIE
+Added Component: Designator=LED2(LED 0603G)
+Added Component: Designator=R1(R 0603_L)
+Added Pin To Net: NetName=GND Pin=LED2-2
+Added Pin To Net: NetName=+3V3 Pin=R1-2
+Added Pin To Net: NetName=+3V3 Pin=U3-C9
+Added Pin To Net: NetName=3.3V Pin=U12-16
+Change Net Name : Old Net Name=+3V3 New Net Name=WIFI_RUN_LED
+Added Pin To Net: NetName=NetLED2_1 Pin=LED2-1
+Added Pin To Net: NetName=NetLED2_1 Pin=R1-1
+Added Net: Name=NetLED2_1
+Added Member To Class: ClassName=main Member=Component LED2 红色
+Added Member To Class: ClassName=main Member=Component R1 1K
+Added Room: Name=InputOutput
+Added Room: Name=main
+Added Room: Name=MOTO
+Added Room: Name=POW
+Added Room: Name=Sensor
+Added Room: Name=SLAPCIE
+Added Room: Name=tongxun

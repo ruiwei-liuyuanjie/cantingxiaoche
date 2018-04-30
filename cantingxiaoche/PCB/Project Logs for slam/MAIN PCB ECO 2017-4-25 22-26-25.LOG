@@ -1,7 +1,0 @@
-Added Component: Designator=U1(SOP8_N)
-Added Pin To Net: NetName=NetC1_1 Pin=U1-1
-Added Pin To Net: NetName=NetR1_1 Pin=U1-4
-Added Pin To Net: NetName=GND Pin=U1-6
-Added Pin To Net: NetName=VIN Pin=U1-7
-Added Pin To Net: NetName=NetC1_2 Pin=U1-8
-Added Member To Class: ClassName=POW Member=Component U1 TPS5430DDA
