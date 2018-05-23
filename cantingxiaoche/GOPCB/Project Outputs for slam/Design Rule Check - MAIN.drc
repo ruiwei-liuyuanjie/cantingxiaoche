@@ -1,43 +1,10 @@
 Protel Design System Design Rule Check
 PCB File : D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc
-Date     : 2018/5/12
-Time     : 9:30:08
+Date     : 2018/5/24
+Time     : 6:59:42
 
 WARNING: Unplated multi-layer pad(s) detected
    Pad Free-1(-5238mil,-384mil)  Multi-Layer on Net GND
-
-Processing Rule : Net Antennae (Tolerance=0mil) (All)
-Rule Violations :0
-
-Processing Rule : Silk to Silk (Clearance=10mil) (Disabled)(All),(All)
-Rule Violations :0
-
-Processing Rule : Silkscreen Over Component Pads (Clearance=10mil) (Disabled)(IsPad),(All)
-Rule Violations :0
-
-Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (Disabled)(All),(All)
-Rule Violations :0
-
-Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
-Rule Violations :0
-
-Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (Disabled)(All)
-Rule Violations :0
-
-Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
-Rule Violations :0
-
-Processing Rule : Width Constraint (Min=10mil) (Max=60mil) (Preferred=50mil) (All)
-Rule Violations :0
-
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
-Rule Violations :0
-
-Processing Rule : Un-Routed Net Constraint ( (All) )
-Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
    Violation between Via (-4329.566mil,-3565.344mil) Top Layer to Bottom Layer and 
@@ -64,64 +31,97 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4093.346mil,-3423.612mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4329.566mil,-3470.856mil) Top Layer to Bottom Layer and 
-                     Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4329.566mil,-3612.588mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4235.078mil,-3470.856mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4329.566mil,-3470.856mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4235.078mil,-3612.588mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4140.59mil,-3470.856mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4235.078mil,-3470.856mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4140.59mil,-3612.588mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4093.346mil,-3470.856mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4140.59mil,-3470.856mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4093.346mil,-3612.588mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4376.81mil,-3565.344mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4093.346mil,-3470.856mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4424.054mil,-3565.344mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4376.81mil,-3518.1mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4376.81mil,-3565.344mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4424.054mil,-3518.1mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4376.81mil,-3423.612mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4376.81mil,-3518.1mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4424.054mil,-3423.612mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4187.834mil,-3565.344mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4376.81mil,-3423.612mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4282.322mil,-3565.344mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4187.834mil,-3518.1mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4187.834mil,-3565.344mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4282.322mil,-3518.1mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4187.834mil,-3423.612mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4187.834mil,-3518.1mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4282.322mil,-3423.612mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4376.81mil,-3470.856mil) Top Layer to Bottom Layer and 
-                     Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4376.81mil,-3612.588mil) Top Layer to Bottom Layer and 
-                     Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4424.054mil,-3470.856mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4187.834mil,-3423.612mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4424.054mil,-3612.588mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4187.834mil,-3470.856mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4424.054mil,-3470.856mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4187.834mil,-3612.588mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4376.81mil,-3612.588mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
-   Violation between Via (-4282.322mil,-3470.856mil) Top Layer to Bottom Layer and 
+   Violation between Via (-4376.81mil,-3470.856mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
    Violation between Via (-4282.322mil,-3612.588mil) Top Layer to Bottom Layer and 
                      Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
+   Violation between Via (-4282.322mil,-3470.856mil) Top Layer to Bottom Layer and 
+                     Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
+   Violation between Via (-4187.834mil,-3612.588mil) Top Layer to Bottom Layer and 
+                     Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
+   Violation between Via (-4187.834mil,-3470.856mil) Top Layer to Bottom Layer and 
+                     Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer
 Rule Violations :40
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=60mil) (Preferred=50mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (Disabled)(All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silkscreen Over Component Pads (Clearance=10mil) (Disabled)(IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
 
 
 Violations Detected : 40
-Time Elapsed        : 00:00:06
+Time Elapsed        : 00:00:05
