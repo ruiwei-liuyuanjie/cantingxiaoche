@@ -3,31 +3,21 @@
 <META http-equiv="Content-Type" content="text/html">
 <style type="text/css">
 		h1, h2, h3, h4, h5, h6 {
-			font-family : segoe ui;
-			color : black;
-			background-color : #EDE7D9;
+			font-family : sans-serif;
+			color : white;
+			background-color : #21489e;
 			padding: 0.3em;
 		}
-
-		h1 {
-			font-size: 1.2em;
-		}		
-
-		h2 {
-			font-size: 1.2em;
-		}
-
 		body {
-			font-family : segoe ui;
+			font-family : verdana;
 		}
-
 		td, th {
 			padding: 0.5em;
-			text-align : left;
-			width: 10em;
+			text-align : center;
+			width : 18%;
 		}
 		th {
-			background-color : #EEEEEE;
+			background-color : #A6CAF0;
 
 		}
 		th.column1, td.column1 {
@@ -36,99 +26,120 @@
 		}
 		table {
 			width : 100%;
-			font-size: 0.9em;
 		}
-
-		.DRC_summary_header {
-			padding-bottom : 0.1em;
-			border : 0px solid black;
-			width: 100%;
-			align: left;
-		}
-
-		.DRC_summary_header_col1,
-		.DRC_summary_header_col2, 
-		.DRC_summary_header_col3 {
-			color : black;
-			font-size:100%;
-			padding : 0em;
-			padding-top : 0.2em;
-			padding-bottom 0.2em;
-			border : 0px solid black;
-			vertical-align: top;
-			text-align: left;
-		}
-
-		.DRC_summary_header_col1 {
-			font-weight: bold;
-			width: 8em;
-		}
-
-		.DRC_summary_header_col2 {
-			width: 0.1em;
 		
+		.DRC_summary_header {							
+			padding-bottom : 0.1em;
+			border : 0px solid black;							
+			width: 100%;
+                        align: right;
+                        
 		}
 
-		.DRC_summary_header_col3 {
-			width : auto;
-		}
-
-		.header_holder {
-		    Width = 100%;
-		    border = 0px solid green;
-		    padding = 0;
-		}
-
-
-		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		.DRC_summary_header_col1, 
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3
 		{
-			left : 0;
-			top : 0;
-			padding: 0em;
-			padding-top : 0.1em;
+			color : black;
+			font-size:150%;
+                        padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2: 0em;
+			border : 0px solid black;
+			width : auto;
+			vertical-align: top;
+			font-weight: bold;				
+		}
+		
+		.DRC_summary_header_col1 	
+		{		                       
+			text-align: right;
+                        width: auto;	
+		}
+
+		.DRC_summary_header_col2 	
+		{		
+			text-align: center;	
+		}
+
+		.DRC_summary_header_col3 	
+		{		
+			text-align: left;	
+		}
+
+
+		
+		.header_holder
+		{
+		Width = 100%;
+		border = 0px solid green;
+		padding = 0;
+		}
+		
+		
+		
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+                {
+			left:0;
+			top:0;
+			padding-top : 0.1em;			
 			border : 0px solid black;
 			width : 100%;
-			vertical-align: top;
-			text-align: left;
-		}
+			vertical-align: top
 
+		}
+		.front_matter {	
+			
+			margin-top: 5px;
+ 			margin-left: 0px;					 			
+ 			horizontal-align: left;
+		}
+				
+		
 		.front_matter_column1 {
-			width : 8em;
-			font-weight: bold;
+			width : 10em;	
+			text-align  : right;
+			padding-right:0.1em;
+			
 		}
-
+		
 		.front_matter_column2 {
-			width: 0.1em;
+                        width: 0.1em;
+			align: center;
+			text-align : center;
+			margin-right  : 0.1em;	
+			margin-left   : 0.1em;
 		}
-
 		.front_matter_column3 {
-			width : auto;
+			width         : auto;  
+			text-align    : left;	
+			margin-right  : 0.5em;				
 		}
-
+		
 		.total_column1, .total_column {
 			font-weight : bold;
 		}
 		.total_column1 {
-			text-align : left;
+			text-align : right;
 		}
 		.warning, .error {
 			color : red;
 			font-weight : bold;
 		}
 		tr.onmouseout_odd {
-			background-color : #white;
+			background-color : #EEEEE0 
 		}
 		tr.onmouseout_even { 
-			background-color : #FAFAFA;
+			background-color : #F3F3E3   
 		}
 		tr.onmouseover_odd, tr.onmouseover_even { 
-			background-color : #EEEEEE;
+			background-color : lightYellow
 		} 
 		a:link, a:visited, .q a:link,.q a:active,.q {
 			color: #21489e; 
 		}
 		a:link.callback, a:visited.callback { 
-			color: #21489e;
+			color: #008000 
 		}
 		a:link.customize, a:visited.customize {
 			color: #C0C0C0;
@@ -211,52 +222,53 @@
 	</script><title>Design Rule Verification Report</title>
 </head>
 <body onload=""><img ALT="Altium" src="
-			file://D:\Altium_Designer\document\Templates\AD_logo.png
-		"><h1>Design Rule Verification Report</h1>
+			file://E:\Altium 10\shared\Templates\AD-rgb_logo_223x64.gif
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Design Rule Verification Report</h1>
 <table class="header_holder">
-<td class="column1">
+<td Style="width:70%">
 <table class="front_matter">
 <tr class="front_matter">
-<td class="front_matter_column1">Date:</td>
-<td class="front_matter_column2"></td>
-<td class="front_matter_column3">2018/4/28 星期六</td>
+<td class="front_matter_column1">Date</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">2018/5/24</td>
 </tr>
 <tr class="front_matter">
-<td class="front_matter_column1">Time:</td>
-<td class="front_matter_column2"></td>
-<td class="front_matter_column3">17:04:45</td>
+<td class="front_matter_column1">Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">6:59:42</td>
 </tr>
 <tr class="front_matter">
-<td class="front_matter_column1">Elapsed Time:</td>
-<td class="front_matter_column2"></td>
-<td class="front_matter_column3">00:00:17</td>
+<td class="front_matter_column1">Elapsed Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">00:00:05</td>
 </tr>
 <tr class="front_matter">
-<td class="front_matter_column1">Filename:</td>
-<td class="front_matter_column2"></td>
-<td class="front_matter_column3"><a href="file:///E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc" class="file"><acronym title="E:\项目\睿维科技\PCB\MAIN.PcbDoc">E:\项目\睿维科技\PCB\MAIN.PcbDoc</acronym></a></td>
+<td class="front_matter_column1">Filename</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3"><a href="file:///D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc" class="file"><acronym title="D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc">D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc</acronym></a></td>
 </tr>
 </table>
 </td>
-<td class="column2">
+<td Style="Width:30%">
 <table class="DRC_summary_header">
 <tr>
-<td class="DRC_summary_header_col1">Warnings:</td>
-<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col1">Warnings</td>
+<td class="DRC_summary_header_col2">:</td>
 <td class="DRC_summary_header_col3" style="color : red">1</td></tr>
 <tr>
-<td class="DRC_summary_header_col1">Rule Violations:</td>
-<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col1">Rule Violations</td>
+<td class="DRC_summary_header_col2">:</td>
 <td class="DRC_summary_header_col3" style="color : red">40</td></tr>
 </table>
 </td>
-</table><a name="ID2EBI3CNX332WLKRGMCHZP2H3ZCK1GEUCSKFOJJJWLLLJ0JV20OCL"><h2>Summary</h2></a><table>
+</table>
+<hr><a name="IDVGM2DD5QB5QZEGFOO0XX4RI3IELQJUGJ33JUIJCDLNB3QTVOQZAO"><h2>Summary</h2></a><table>
 <tr>
 <th class="column1">Warnings</th>
 <th class="column2">Count</th>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDOB1TLL3X5ZGFLCEULYZPW3FZVM52VQGREOXTFKEYUVCATT2EEOEO">Unplated multi-layer pad(s) detected</a></td>
+<td class="column1"><a href="#IDOAB0F0YAZ13FGMMRA0DEXM5UGGBEENWJWF1AUSCARGRVSE4MX52K">Unplated multi-layer pad(s) detected</a></td>
 <td class="column2">1</td>
 </tr>
 <tr>
@@ -269,227 +281,227 @@
 <th class="column2">Count</th>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="#IDFD04ULLIYQZJJZ4HSM31HTI1IDAQS4RHNKM1YFJUT4U00IGULNF">Net Antennae (Tolerance=0mm) (All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDD3XTDFYW0EU1B3GYHVOR5CXQVK3TQFM1ZVSVVCDV4KEUMD215BPF">Silk to Silk (Clearance=0.254mm) (Disabled)(All),(All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="#IDIPZYUERHJ0NWB235HD4DJDIGYRZTA3MZ4GRNFOIFGXA5BDCR5J">Silk To Solder Mask (Clearance=0.254mm) (Disabled)(IsPad),(All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDJVYY3G10ENCVNWKV54WAKKEZZBTZ0ZLNFMH1LOLRYLYFEZT50D4J">Minimum Solder Mask Sliver (Gap=0.254mm) (Disabled)(All),(All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="#ID4I4AKO33PKH5JWW4QCL4MV3NDPTT1NWOBCBKSPJ0XKQPUHL0Z5ZC">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDMQ2URDD00MMMNUPIO2MJZF5XQLLIPYUN5VNXDCC05GAREYYE5KZD">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (Disabled)(All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="#IDFWDNYTLJKHI4PS3YNH0JTGQUVMQYNSIBFRZJBNYYJJ0TRCVCHNB">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDZ0HT4A2SAPE4NBOKKQMZHTGTBFVBZW3NPANOVOKT0YVJDIBZSGBP">Width Constraint (Min=0.254mm) (Max=1.524mm) (Preferred=1.27mm) (All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="#IDWE2ZNWVFA2D5CJR0U4VBAPY2WJXMVIBC2HTH5TOOUSSAXHMRP1HJ">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDW40XCZ5WGIYEDZ4A5X4ISFGI5HMTDSCASFFIXLFKFR5R1GCGPCFO">Clearance Constraint (Gap=0.178mm) (All),(All)</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td class="column1"><a href="#IDQ30IX3HASQMONSFDJIPLBI5OFL1XYKVNRMYNLY5VQGICBQJZML">Un-Routed Net Constraint ( (All) )</a></td>
-<td class="column2">0</td>
-</tr>
-<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="#IDBQJFK4LSO0PJKQNIXJF3WXQSXJIICPTLFAGGJPPZKBC5IDENDLSH">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column1"><a href="#IDAFVULQTDSVYWG21GA44UJCNUIJWKMGAB5FJYLHMQGHLTNSGWJGML">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
 <td class="column2">40</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHZABJBB0O0S1GXVGBK2Y40HDBN35Q5OUHPLGCYMT4JGHEXZ5B5SH">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHAXP2XX5T4WUKAPASBL4TVMT1NZVKRXRTTCPE2LHMNODXUIUUQU">Clearance Constraint (Gap=7mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVNFHAXFRTBKAJTY5FKTFVQAYALAYPZ4M2JBBVAH3R5A3ULNWMIFE">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDS2ZTS4WNP3SOILYUDOWILA3SYETDBBGYEJOP2JH2XVUM5ODVZS4D">Width Constraint (Min=10mil) (Max=60mil) (Preferred=50mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEZTJK2SWQWPDHNCQAD4HK1XPRCDOIPSPBJA5VEEHTK0OL02GRPYE">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBNDJEHHVDKJCI5TOY1YDSKOCVGG3ZPLUFZTCLSMUY4TV2KI205YK">Hole Size Constraint (Min=1mil) (Max=100mil) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1MQIICGZ2IOSFL0X5EL1KCWQZQCBGFHDKN4OFEWJYIUU32B14IM">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4TTNTI3JZRT1DEXTJ4DPFH3WEMOFI2EI53K43BGJRP1UTD3PLZKM">Minimum Solder Mask Sliver (Gap=10mil) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYSEEJPKUDIBKIFD0M5YXU0JOPFOBNBCG4KAPLL3GURFT02BR4XO">Silkscreen Over Component Pads (Clearance=10mil) (Disabled)(IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKSXASEYBBAHSGX0TUPDCWWUBJNIYAHGZSWJWUUJK44FHBTVIWDYF">Silk to Silk (Clearance=10mil) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDI1ZMGHJNZ01AOC1X0WMURIIZOC5NOJ2QEQJBIBJ0ZNQXF0GC1HID">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
 </tr>
 <tr>
 <td style="font-weight : bold; text-align : right" class="column1">Total</td>
 <td style="font-weight : bold" class="column2">40</td>
 </tr>
-</table><br><a name="IDKNHWQ4KUPXZKHLW0YYB1VA3PJKZRXFZWRAUENO3H3UCDFTRNAL"><h2>Warnings</h2></a><a name="IDOB1TLL3X5ZGFLCEULYZPW3FZVM52VQGREOXTFKEYUVCATT2EEOEO"><table>
+</table><br><hr><a name="ID1ALNDYTGFSCF2QT10VWZVBLKHD351UEIJZHGXO0YJA1JW3J5ZB"><h2>Warnings</h2></a><a name="IDOAB0F0YAZ13FGMMRA0DEXM5UGGBEENWJWF1AUSCARGRVSE4MX52K"><table>
 <tr>
 <th style="text-align : left" colspan="1" class="warning">Unplated multi-layer pad(s) detected</th>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8330.102mil|Location2.X=8475.898mil|Location1.Y=7085.102mil|Location2.Y=7230.898mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8330.102mil|Location2.X=8475.898mil|Location1.Y=7085.102mil|Location2.Y=7230.898mil|Absolute=True">Pad Free-1(-133.045mm,-9.754mm)  Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7880.465mil|Location2.X=13609.843mil|Location1.Y=3321.157mil|Location2.Y=7471.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7880.465mil|Location2.X=13609.843mil|Location1.Y=3321.157mil|Location2.Y=7471.465mil|Absolute=True">Net GND</acronym></a></td>
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8330.102mil|Location2.X=8475.898mil|Location1.Y=7085.102mil|Location2.Y=7230.898mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8330.102mil|Location2.X=8475.898mil|Location1.Y=7085.102mil|Location2.Y=7230.898mil|Absolute=True">Pad Free-1(-5238mil,-384mil)  Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7866.189mil|Location2.X=13611.811mil|Location1.Y=3320.189mil|Location2.Y=7471.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7866.189mil|Location2.X=13611.811mil|Location1.Y=3320.189mil|Location2.Y=7471.465mil|Absolute=True">Net GND</acronym></a></td>
 </tr>
-</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDBQJFK4LSO0PJKQNIXJF3WXQSXJIICPTLFAGGJPPZKBC5IDENDLSH"><table>
+</table></a><a href="#top">Back to top</a><br><br><hr><a name="IDAFVULQTDSVYWG21GA44UJCNUIJWKMGAB5FJYLHMQGHLTNSGWJGML"><table>
 <tr>
 <th style="text-align : left" colspan="2" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-109.971mm,-90.56mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-4329.566mil,-3565.344mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-109.971mm,-89.36mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-4329.566mil,-3518.1mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-109.971mm,-86.96mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-4329.566mil,-3423.612mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-107.571mm,-90.56mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-4235.078mil,-3565.344mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-107.571mm,-89.36mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-4235.078mil,-3518.1mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-107.571mm,-86.96mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-4235.078mil,-3423.612mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-105.171mm,-90.56mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-4140.59mil,-3565.344mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-105.171mm,-89.36mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-4140.59mil,-3518.1mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-105.171mm,-86.96mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-4140.59mil,-3423.612mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-103.971mm,-90.56mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-4093.346mil,-3565.344mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-103.971mm,-89.36mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-4093.346mil,-3518.1mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-103.971mm,-86.96mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-4093.346mil,-3423.612mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-109.971mm,-88.16mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-4329.566mil,-3612.588mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-109.971mm,-91.76mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9294.442mil|Location2.X=9328.426mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-4329.566mil,-3470.856mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-107.571mm,-88.16mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-4235.078mil,-3612.588mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-107.571mm,-91.76mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9388.93mil|Location2.X=9422.914mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-4235.078mil,-3470.856mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-105.171mm,-88.16mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-4140.59mil,-3612.588mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-105.171mm,-91.76mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9483.418mil|Location2.X=9517.402mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-4140.59mil,-3470.856mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-103.971mm,-88.16mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-4093.346mil,-3612.588mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-103.971mm,-91.76mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9530.662mil|Location2.X=9564.646mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-4093.346mil,-3470.856mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-111.171mm,-90.56mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-4424.054mil,-3565.344mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-112.371mm,-90.56mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-4376.81mil,-3565.344mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-111.171mm,-89.36mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-4424.054mil,-3518.1mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-112.371mm,-89.36mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-4376.81mil,-3518.1mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-111.171mm,-86.96mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-4424.054mil,-3423.612mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-112.371mm,-86.96mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-4376.81mil,-3423.612mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-106.371mm,-90.56mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-4282.322mil,-3565.344mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-108.771mm,-90.56mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=3959.664mil|Location2.Y=3993.648mil|Absolute=True">Via (-4187.834mil,-3565.344mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-106.371mm,-89.36mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-4282.322mil,-3518.1mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-108.771mm,-89.36mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=4006.908mil|Location2.Y=4040.892mil|Absolute=True">Via (-4187.834mil,-3518.1mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-106.371mm,-86.96mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-4282.322mil,-3423.612mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-108.771mm,-86.96mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=4101.396mil|Location2.Y=4135.38mil|Absolute=True">Via (-4187.834mil,-3423.612mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-111.171mm,-88.16mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-4424.054mil,-3612.588mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-111.171mm,-91.76mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-4424.054mil,-3470.856mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-112.371mm,-88.16mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-4376.81mil,-3612.588mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9199.954mil|Location2.X=9233.938mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-112.371mm,-91.76mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9247.198mil|Location2.X=9281.182mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-4376.81mil,-3470.856mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-106.371mm,-88.16mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-4282.322mil,-3612.588mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-106.371mm,-91.76mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-4282.322mil,-3470.856mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-108.771mm,-88.16mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-4187.834mil,-3612.588mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
 <tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
-<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9341.686mil|Location2.X=9375.67mil|Location1.Y=3912.42mil|Location2.Y=3946.404mil|Absolute=True">Via (-108.771mm,-91.76mm) Top Layer to Bottom Layer</acronym></a></td>
-<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\%E9%A1%B9%E7%9B%AE\%E7%9D%BF%E7%BB%B4%E7%A7%91%E6%8A%80\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\项目\睿维科技\PCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-108.171mm,-89.36mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9436.174mil|Location2.X=9470.158mil|Location1.Y=4054.152mil|Location2.Y=4088.136mil|Absolute=True">Via (-4187.834mil,-3470.856mil) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\cantingxiaoche\geren\cantingxiaoche\GOPCB\MAIN.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9142.08mil|Location2.X=9622.52mil|Location1.Y=3891.947mil|Location2.Y=4155.853mil|Absolute=True">Pad U8-21(-4258.7mil,-3518.1mil)  Top Layer</acronym></a></td>
 </tr>
-</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</table></a><a href="#top">Back to top</a><br><br></body>
 </html>
