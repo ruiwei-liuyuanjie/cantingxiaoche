@@ -1,0 +1,42 @@
+Protel Design System Design Rule Check
+PCB File : I:\快盘\公司程序\AGV车\板子文件\循迹传感器\PCB_STM32版本\XUNJI_V2.0.PcbDoc
+Date     : 2016/2/22
+Time     : 9:55:44
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+   Violation between Hole Size Constraint (3mm > 2.54mm) : Pad Free-3(5.864mm,4.591mm)  Multi-Layer
+   Violation between Hole Size Constraint (3mm > 2.54mm) : Pad Free-3(5.864mm,34.478mm)  Multi-Layer
+   Violation between Hole Size Constraint (3mm > 2.54mm) : Pad Free-3(184.404mm,34.478mm)  Multi-Layer
+   Violation between Hole Size Constraint (3mm > 2.54mm) : Pad Free-3(184.404mm,4.591mm)  Multi-Layer
+Rule Violations :4
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.203mm) (Max=2.54mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.5mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.203mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.3mm) (inpoly),(All)
+Rule Violations :0
+
+
+Violations Detected : 4
+Time Elapsed        : 00:00:02

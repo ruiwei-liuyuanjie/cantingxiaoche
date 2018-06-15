@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetC12_1 Pin=R28-2
+Added Component: Designator=TVS1(SMBJ6.5CA)
+Added Pin To Net: NetName=VCC3.3V Pin=R28-2
+Added Pin To Net: NetName=GND Pin=TVS1-1
+Added Pin To Net: NetName=VCC3.3V Pin=TVS1-2
+Added Member To Class: ClassName=MAIN Member=Component TVS1 SMBJ5.0CA
